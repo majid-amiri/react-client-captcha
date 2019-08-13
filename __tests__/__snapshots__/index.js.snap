@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Captcha Render Should render the captcha 1`] = `
+<ClientCaptcha
+  backgroundColor="#F2F2F2"
+  captchaClassName=""
+  captchaCode={[MockFunction]}
+  chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  charsCount={4}
+  containerClassName=""
+  fontColor="#000"
+  fontFamily="Arial, Tahoma"
+  fontSize={22}
+  height={40}
+  retry={true}
+  retryClassName=""
+  retryIcon="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.png"
+  retryIconSize={40}
+  width={100}
+>
+  <div
+    className=""
+  >
+    <canvas
+      className=""
+      height={40}
+      style={
+        Object {
+          "pointerEvents": "none",
+        }
+      }
+      width={100}
+    />
+    <img
+      alt="Re-new captcha"
+      className=""
+      height={40}
+      onClick={[Function]}
+      src="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.png"
+      width={40}
+    />
+  </div>
+</ClientCaptcha>
+`;

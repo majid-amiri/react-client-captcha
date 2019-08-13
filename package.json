@@ -1,0 +1,81 @@
+{
+  "name": "react-client-captcha",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Majid Amiri",
+  "license": "MIT",
+  "repository": "majid-amiri/react-client-captcha",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "test": "jest __tests__",
+    "test:coverage": "npm run test --coverage",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "size": "size-limit"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./__tests__/setupTests.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/dev/",
+      "<rootDir>/__tests__/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy"
+    }
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@size-limit/preset-small-lib": "^2.0.2",
+    "@svgr/rollup": "^2.4.1",
+    "babel-eslint": "10.0.2",
+    "babel-jest": "24.8.0",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-polyfill": "6.26.0",
+    "cross-env": "^5.1.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "4.2.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-jsx-import": "0.0.1",
+    "eslint-plugin-react": "7.13.0",
+    "gh-pages": "^1.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "24.8.0",
+    "jest-canvas-mock": "^2.1.0",
+    "jest-enzyme": "7.0.2",
+    "prettier": "1.17.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-copy": "^3.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "2 KB"
+    }
+  ]
+}
