@@ -7,19 +7,20 @@ exports[`Captcha Render Should render the captcha 1`] = `
   captchaCode={[MockFunction]}
   chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
   charsCount={4}
-  containerClassName=""
+  containerClassName="captchaContainer"
   fontColor="#000"
   fontFamily="Arial, Tahoma"
   fontSize={22}
   height={40}
   retry={true}
-  retryClassName=""
-  retryIcon="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.png"
-  retryIconSize={40}
+  retryButtonClassName="retryButton"
+  retryIcon="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg"
+  retryIconSize={24}
+  retryImgClassName=""
   width={100}
 >
   <div
-    className=""
+    className="captchaContainer"
   >
     <canvas
       className=""
@@ -31,14 +32,19 @@ exports[`Captcha Render Should render the captcha 1`] = `
       }
       width={100}
     />
-    <img
-      alt="Re-new captcha"
-      className=""
-      height={40}
+    <button
+      className="retryButton"
+      id="retryButton"
       onClick={[Function]}
-      src="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.png"
-      width={40}
-    />
+    >
+      <img
+        alt="Re-new captcha"
+        className=""
+        height={24}
+        src="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg"
+        width={24}
+      />
+    </button>
   </div>
 </ClientCaptcha>
 `;

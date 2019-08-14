@@ -1,6 +1,6 @@
 {
   "name": "react-client-captcha",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "Majid Amiri",
   "license": "MIT",
@@ -13,7 +13,9 @@
     "test:coverage": "npm run test --coverage",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "size": "size-limit"
+    "size": "size-limit",
+    "prettier": "prettier --write \"**/*.{js,ts,tsx,css,scss,json,md,mdx}\"",
+    "generate-props": "node scripts/generateReactPropsTable.js src/index.js && yarn prettier"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -26,7 +28,9 @@
     ],
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"
-    }
+    },
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -45,6 +49,7 @@
     "babel-jest": "24.8.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-polyfill": "6.26.0",
+    "codecov": "^3.5.0",
     "cross-env": "^5.1.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
@@ -62,11 +67,13 @@
     "jest-enzyme": "7.0.2",
     "prettier": "1.17.0",
     "react": "^16.9.0",
+    "react-docgen": "^4.1.1",
     "react-dom": "^16.9.0",
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-copy": "^3.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-terser": "^5.1.1"
   },
   "files": [
