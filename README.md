@@ -11,19 +11,8 @@ A light JS-based captcha generator.
 - Retry functionality.
 - Easily customizable via props.
 
-## Documentation
-
-- [Getting started](https://majid-amiri.github.io/react-client-captcha/)
-  - [Installation](https://majid-amiri.github.io/react-client-captcha/#installation)
-  - [Usage](https://majid-amiri.github.io/react-client-captcha/#usage)
-  - [Props](https://majid-amiri.github.io/react-client-captcha/#props)
-  - [Licence](https://majid-amiri.github.io/react-client-captcha/#license)
-- [Examples](https://majid-amiri.github.io/react-client-captcha/examples)
-  - [Basic Captcha](https://majid-amiri.github.io/react-client-captcha/examples#basic-captcha)
-  - [Captcha With Input and Validation](https://majid-amiri.github.io/react-client-captcha/examples#captcha-with-input-and-validation)
-  - [Customization](https://majid-amiri.github.io/react-client-captcha/examples#customization)
-
-
+####[Documentation](https://majid-amiri.github.io/react-client-captcha/)
+ 
 ## Installation
 
 ```
