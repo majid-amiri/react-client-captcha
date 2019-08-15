@@ -1,13 +1,13 @@
 {
-  "vendors.js": "/static/js/vendors.aacc51b1.js",
-  "vendors.js.map": "/static/js/vendors.92aff9f1e19faf365d4c.js.map",
-  "app.js": "/static/js/app.92aff9f1e19faf365d4c.js",
-  "app.js.map": "/static/js/app.92aff9f1e19faf365d4c.js.map",
-  "docs-template-mdx-examples.css": "/static/css/docs-template-mdx-examples.92aff9f1e19faf365d4c.css",
-  "docs-template-mdx-examples.js": "/static/js/docs-template-mdx-examples.e570b445.js",
-  "docs-template-mdx-examples.js.map": "/static/js/docs-template-mdx-examples.92aff9f1e19faf365d4c.js.map",
-  "docs-template-mdx-index.css": "/static/css/docs-template-mdx-index.92aff9f1e19faf365d4c.css",
-  "docs-template-mdx-index.js": "/static/js/docs-template-mdx-index.3720a6b4.js",
-  "docs-template-mdx-index.js.map": "/static/js/docs-template-mdx-index.92aff9f1e19faf365d4c.js.map",
-  "index.html": "/index.html"
+  "vendors.js": "/react-client-captcha/static/js/vendors.9c75a814.js",
+  "vendors.js.map": "/react-client-captcha/static/js/vendors.a8fa3cce09756a8bd416.js.map",
+  "app.js": "/react-client-captcha/static/js/app.a8fa3cce09756a8bd416.js",
+  "app.js.map": "/react-client-captcha/static/js/app.a8fa3cce09756a8bd416.js.map",
+  "docs-template-mdx-examples.css": "/react-client-captcha/static/css/docs-template-mdx-examples.a8fa3cce09756a8bd416.css",
+  "docs-template-mdx-examples.js": "/react-client-captcha/static/js/docs-template-mdx-examples.e570b445.js",
+  "docs-template-mdx-examples.js.map": "/react-client-captcha/static/js/docs-template-mdx-examples.a8fa3cce09756a8bd416.js.map",
+  "docs-template-mdx-index.css": "/react-client-captcha/static/css/docs-template-mdx-index.a8fa3cce09756a8bd416.css",
+  "docs-template-mdx-index.js": "/react-client-captcha/static/js/docs-template-mdx-index.3720a6b4.js",
+  "docs-template-mdx-index.js.map": "/react-client-captcha/static/js/docs-template-mdx-index.a8fa3cce09756a8bd416.js.map",
+  "index.html": "/react-client-captcha/index.html"
 }

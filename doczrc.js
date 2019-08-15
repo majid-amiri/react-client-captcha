@@ -4,6 +4,7 @@ export default {
   title: "react-client-captcha",
   description: "A light JS-based captcha generator.",
   src: ".",
+  base: "/react-client-captcha/",
   dest: "./docs",
   codeSandbox: false,
   plugins: [
