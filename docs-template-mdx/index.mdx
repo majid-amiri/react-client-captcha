@@ -1,0 +1,52 @@
+---
+name: Getting started
+route: /
+order: 1
+---
+
+import { Props } from "docz";
+import ClientCaptcha from "../src";
+
+# react-client-captcha
+
+![ClientCaptcha Screenshot](https://raw.githubusercontent.com/majid-amiri/react-client-captcha/master/react-client-captcha.png)
+
+A light JS-based captcha generator.
+
+- Custom characters.
+- Retry functionality.
+- Easily customizable via props.
+
+## Installation
+
+`npm install react-client-captcha --save`
+
+or
+
+`yarn add react-client-captcha`
+
+## Usage
+
+[![Edit react-client-captcha](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/stoic-noyce-fnkkq)
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import ClientCaptcha from "react-client-captcha";
+
+export default class App extends React.Component {
+  render() {
+    return <ClientCaptcha captchaCode={code => console.log(code)} />;
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));
+```
+
+## Props
+
+<Props of={ClientCaptcha} />
+
+## License
+
+MIT © [Majid Amiri](https://github.com/majid-amiri/)

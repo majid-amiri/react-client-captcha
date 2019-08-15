@@ -26,7 +26,10 @@ export default {
       runtimeHelpers: true
     }),
     postcss({
-      extract: true
+      modules: true,
+      inject: {
+        insertAt: "top"
+      }
     }),
     copy({
       targets: [{ src: "src/retry.svg", dest: "dist/" }]

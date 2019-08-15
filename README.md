@@ -41,8 +41,6 @@ ReactDOM.render(<App />, document.getElementById("app"));
 
 <!-- --begin-insert-props-- -->
 
-### ClientCaptcha
-
 | Name                 | Description                                           | Type     | Default                                                              |
 | -------------------- | ----------------------------------------------------- | -------- | -------------------------------------------------------------------- |
 | width                | width of captcha image.                               | `number` | `100`                                                                |
@@ -57,16 +55,16 @@ ReactDOM.render(<App />, document.getElementById("app"));
 | retry                | whether captcha has retry functionality               | `bool`   | `true`                                                               |
 | retryIcon            | the icon of retry button                              | `string` | `"https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg"` |
 | retryIconSize        | size of retry button icon                             | `number` | `24`                                                                 |
-| retryButtonClassName | className of retry button                             | `string` | `"retryButton"`                                                      |
+| retryButtonClassName | className of retry button                             | `string` | `cssClasses.retryButton`                                             |
 | retryImgClassName    | className of retry img                                | `string` | `""`                                                                 |
-| containerClassName   | className of captcha and retry button container div   | `string` | `"captchaContainer"`                                                 |
+| containerClassName   | className of captcha and retry button container div   | `string` | `cssClasses.captchaContainer`                                        |
 | captchaClassName     | className of captcha image                            | `string` | `""`                                                                 |
 
 <!-- --end-insert-props-- -->
 
-## TODO
+## Tests
 
-- Add documentation.
+Clone the project and run `yarn test`
 
 ## License
 

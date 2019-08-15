@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./style.css";
+import cssClasses from "./style.css";
 
 class ClientCaptcha extends Component {
   constructor(props) {
@@ -100,9 +100,9 @@ ClientCaptcha.defaultProps = {
   retry: true,
   retryIcon: "https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg",
   retryIconSize: 24,
-  retryButtonClassName: "retryButton",
+  retryButtonClassName: cssClasses.retryButton,
   retryImgClassName: "",
-  containerClassName: "captchaContainer",
+  containerClassName: cssClasses.captchaContainer,
   captchaClassName: ""
 };
 

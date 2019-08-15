@@ -1,0 +1,75 @@
+---
+name: Examples
+route: /examples
+order: 2
+---
+
+import { Playground } from "docz";
+import ClientCaptcha from "../src";
+
+# Examples
+
+## Basic Captcha
+
+<Playground>
+  {() => {
+    const [captchaCode, setCaptcha] = React.useState();
+    return (
+      <div>
+        <ClientCaptcha captchaCode={setCaptcha} />
+        Current captcha code: {captchaCode}
+      </div>
+    );
+
+}}
+
+</Playground>
+
+## Captcha With Input and Validation
+
+<Playground>
+  {() => {
+    const [captchaCode, setCaptcha] = React.useState();
+    const [captchaInput, setCaptchaInput] = React.useState();
+    const validateCaptcha = () => {
+        if(captchaCode === captchaInput)
+            alert("Valid")
+        else
+            alert("Invalid")
+    }
+    return (
+      <div>
+        <ClientCaptcha captchaCode={setCaptcha} />
+        <input type="text" value={captchaInput} onChange={e => setCaptchaInput(e.target.value)} />
+        <button onClick={validateCaptcha}>Validate</button>
+      </div>
+    );
+
+}}
+
+</Playground>
+
+## Customization
+
+<Playground>
+  {() => {
+    const [captchaCode, setCaptcha] = React.useState();
+    return (
+      <div>
+        <ClientCaptcha
+            captchaCode={setCaptcha}
+            chars="ABCDEFGHIJK!@#$%^&*"
+            charsCount={6}
+            width={300}
+            height={100}
+            fontSize={45}
+            backgroundColor="#BD272D"
+            fontColor="#fff"
+        />
+        Current captcha code: {captchaCode}
+      </div>
+    );
+
+}}
+
+</Playground>
