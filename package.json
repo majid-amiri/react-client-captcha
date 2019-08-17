@@ -9,8 +9,8 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
-    "test": "jest __tests__",
-    "test:coverage": "npm run test --coverage",
+    "test": "yarn test:coverage && yarn build && yarn size && yarn docz:build",
+    "test:coverage": "jest __tests__ --coverage",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "build": "rollup -c",
