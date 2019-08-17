@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/react-client-captcha.svg)](https://www.npmjs.com/package/react-client-captcha)
 ![Codecov](https://img.shields.io/codecov/c/github/majid-amiri/react-client-captcha?token=fa410599316a4368b4ecdb828baf6cbb)
+[![Build Status](https://travis-ci.org/majid-amiri/react-client-captcha.svg?branch=master)](https://travis-ci.org/majid-amiri/react-client-captcha)
 
 ![](https://raw.githubusercontent.com/majid-amiri/react-client-captcha/master/react-client-captcha.png)
 
