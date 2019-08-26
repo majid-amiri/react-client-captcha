@@ -25,6 +25,11 @@ class ClientCaptcha extends Component {
     return captcha.join("");
   };
 
+  resetCaptcha = e => {
+    e.preventDefault();
+    this.generateCaptcha();
+  }
+
   generateCaptcha = () => {
     const {
       width,
@@ -70,7 +75,7 @@ class ClientCaptcha extends Component {
         />
         {retry && (
           <button
-            onClick={this.generateCaptcha}
+            onClick={this.resetCaptcha}
             id="retryButton"
             className={retryButtonClassName}
           >
