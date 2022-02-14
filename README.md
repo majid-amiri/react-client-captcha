@@ -43,26 +43,28 @@ ReactDOM.render(<App />, document.getElementById('app'))
 ## Props
 
 <!-- --begin-insert-props-- -->
+### ClientCaptcha
 
-| Name                 | Description                                           | Type     | Default                                                              |
-| -------------------- | ----------------------------------------------------- | -------- | -------------------------------------------------------------------- |
-| width                | width of captcha image.                               | `number` | `100`                                                                |
-| height               | height of captcha image.                              | `number` | `40`                                                                 |
-| fontSize             | fontSize of captcha characters.                       | `number` | `22`                                                                 |
-| fontFamily           | fontFamily of captcha characters.                     | `string` | `"Arial, Tahoma"`                                                    |
-| fontColor            | fontColor of captcha characters.                      | `string` | `"#000"`                                                             |
-| chars                | characters that captcha should be made with.          | `string` | `"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"`   |
-| charsCount           | count of characters that captcha should be made with. | `number` | `4`                                                                  |
-| captchaCode          | function that returns current shown captcha code.     | `func`   |                                                                      |
-| backgroundColor      | backgroundColor of captcha image.                     | `string` | `"#F2F2F2"`                                                          |
-| retry                | whether captcha has retry functionality               | `bool`   | `true`                                                               |
-| retryIcon            | the icon of retry button                              | `string` | `"https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg"` |
-| retryIconSize        | size of retry button icon                             | `number` | `24`                                                                 |
-| retryButtonClassName | className of retry button                             | `string` | `cssClasses.retryButton`                                             |
-| retryImgClassName    | className of retry img                                | `string` | `""`                                                                 |
-| containerClassName   | className of captcha and retry button container div   | `string` | `cssClasses.captchaContainer`                                        |
-| captchaClassName     | className of captcha image                            | `string` | `""`                                                                 |
-
+|Name|Description|Type|Default|
+|---|---|---|---|
+|backgroundColor|backgroundColor of captcha image.|`string`|`'#F2F2F2'`|
+|captchaClassName|className of captcha image|`string`|`''`|
+|captchaCode|function that returns current shown captcha code.|`func`|`() => {}`|
+|chars|characters that captcha should be made with.|`string`|`'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'`|
+|charsCount|count of characters that captcha should be made with.|`number`|`4`|
+|containerClassName|className of captcha and retry button container div|`string`|`styles.captchaContainer`|
+|font|the font property for canvas. if set, none of the fontFamily, fontSize and font Style would work.|`string`|`null`|
+|fontColor|fontColor of captcha characters.|`string`|`'#000'`|
+|fontFamily|fontFamily of captcha characters.|`string`|`'Arial, Tahoma'`|
+|fontSize|fontSize of captcha characters.|`number`|`22`|
+|fontStyle|fontStyle of captcha characters.|`string`|`'normal'`|
+|height|height of captcha image.|`number`|`40`|
+|refreshButton|whether there is a refresh button by default|`bool`|`true`|
+|refreshButtonClassName|className of refresh button|`string`|`styles.retryButton`|
+|refreshButtonIcon|the icon of refresh button|`string`|`'https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg'`|
+|refreshButtonIconClassName|className of refresh button icon|`string`|`''`|
+|refreshButtonIconSize|size of refresh button icon|`number`|`24`|
+|width|width of captcha image.|`number`|`100`|
 <!-- --end-insert-props-- -->
 
 ## Tests
