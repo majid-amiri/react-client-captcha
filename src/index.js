@@ -33,11 +33,11 @@ const ClientCaptcha = forwardRef(
     },
     ref
   ) => {
-    const canvasRef = useRef(ref.current)
+    const canvasRef = useRef(ref?.current)
 
     const generateCaptcha = () => {
       const code = generateCode(chars, charsCount)
-      generateCanvas(canvasRef, code, {
+      generateCanvas(canvasRef.current.getContext('2d'), code, {
         backgroundColor,
         font,
         fontSize,
@@ -80,7 +80,7 @@ const ClientCaptcha = forwardRef(
         {refreshButton && (
           <button
             onClick={resetCaptcha}
-            id='retryButton'
+            data-testid='refreshButton'
             className={refreshButtonClassName}
           >
             <img
@@ -131,7 +131,7 @@ ClientCaptcha.propTypes = {
   /**
    * function that returns current shown captcha code.
    */
-  captchaCode: PropTypes.func,
+  captchaCode: PropTypes.func.isRequired,
   /**
    * characters that captcha should be made with.
    */
@@ -167,7 +167,7 @@ ClientCaptcha.propTypes = {
   /**
    * height of captcha image.
    */
-  height: PropTypes.number,
+  height: PropTypes.number.isRequired,
   /**
    * whether there is a refresh button by default
    */
@@ -191,7 +191,7 @@ ClientCaptcha.propTypes = {
   /**
    * width of captcha image.
    */
-  width: PropTypes.number
+  width: PropTypes.number.isRequired
 }
 
 export default ClientCaptcha

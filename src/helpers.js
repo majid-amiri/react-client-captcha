@@ -10,7 +10,7 @@ export const generateCode = (chars, charsCount) => {
 }
 
 export const generateCanvas = (
-  ref,
+  ctx,
   code,
   {
     backgroundColor,
@@ -23,7 +23,6 @@ export const generateCanvas = (
     width
   }
 ) => {
-  const ctx = ref.current.getContext('2d')
   ctx.fillStyle = backgroundColor
   ctx.fillRect(0, 0, width, height)
   ctx.font = font || `${fontStyle} ${fontSize}px ${fontFamily}`

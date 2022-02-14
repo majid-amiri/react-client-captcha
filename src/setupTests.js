@@ -1,5 +1,2 @@
-import 'babel-polyfill'
+import '@testing-library/jest-dom'
 import 'jest-canvas-mock'
-require.extensions['.svg'] = () => {}
-
-window.scroll = jest.fn()

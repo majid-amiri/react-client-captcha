@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientCaptcha Render Should render the ClientCaptcha 1`] = `
+<div>
+  <div
+    class="captchaContainer"
+  >
+    <canvas
+      class=""
+      height="40"
+      style="pointer-events: none;"
+      width="100"
+    />
+    <button
+      class="retryButton"
+      data-testid="refreshButton"
+    >
+      <img
+        alt="Re-new captcha"
+        class=""
+        height="24"
+        src="https://cdn.jsdelivr.net/npm/react-client-captcha/dist/retry.svg"
+        width="24"
+      />
+    </button>
+  </div>
+</div>
+`;
