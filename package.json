@@ -1,6 +1,6 @@
 {
   "name": "react-client-captcha",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A light JS-based captcha generator for React.js",
   "author": "majid-amiri",
   "license": "MIT",
